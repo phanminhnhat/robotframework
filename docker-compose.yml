@@ -1,0 +1,11 @@
+version: '3'
+services:
+  robotframework:
+    image: "pmnhat/robotframework"
+    ports:
+    - "80:80"
+    - "5900:5900"
+    - "22:22"
+    deploy:
+      restart_policy:
+        condition: on-failure
