@@ -3,9 +3,9 @@ services:
   robotframework:
     image: "pmnhat/robotframework:latest"
     ports:
-    - "80:80"
-    - "5900:5900"
-    - "22:22"
+    - "8080:80"
+    - "5901:5900"
+    - "23:22"
     - "4444:4444"
     deploy:
       restart_policy:
